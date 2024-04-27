@@ -1,0 +1,183 @@
+/* import React, { useState } from "react";
+
+import Dashboard from "../Dashboard";
+import Products from "../Products";
+import Categories from "../Categories";
+import Income from "../Income";
+import Promote from "../Promote";
+import Help from "../Help";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+import setting from "./../../resources/setting.png";
+
+import dashborad from "./../../resources/dashboard.png";
+import product from "./../../resources/product.png";
+import categories from "./../../resources/categories.png";
+import income from "./../../resources/income.png";
+import promote from "./../../resources/promote.png";
+import help from "./../../resources/help.png";
+
+function SideBar() {
+  const [Expanded, setExpanded] = useState(true);
+  const Menus = [
+    { title: "Dashboard", src: dashborad },
+    { title: "Products", src: product },
+    { title: "Categories", src: categories },
+    { title: "Income", src: income },
+    { title: "Promote", src: promote },
+    { title: "Help", src: help },
+  ];
+
+  return (
+    <div className="flex bg-[#f9fafe">
+      <div
+        className={` ${
+          Expanded ? "w-72" : "w-20"
+        } duration-300 h-screen p-5 pt-8 bg-[#cccccc] relative`}
+      >
+        <div className="flex gap-x-4 items-center">
+          <img
+            src={setting}
+            className={`cursor-pointer duration-500 w-10 h-10 object-contain `}
+            onClick={() => setExpanded(!Expanded)}
+          />
+          <h1
+            className={`text-white origin-left font-medium text-xl duration-200 ${
+              !Expanded && "scale-0"
+            }`}
+          >
+            Dashboard
+          </h1>
+        </div>
+        <ul className="pt-6">
+          {Menus.map((menu, index) => (
+            <li
+              key={index}
+              className={`flex rounded-sm p-2 text-grey-300 text-sm gap-x-4 items-center hover:bg-[#000] hover:text-white cursor-pointer 
+              ${menu.gap ? "mt-4" : "mt-2"} ${index === 0 && "bg-red"}`}
+            >
+              <img src={menu.src} className="w-10 h-10 object-contain" />
+              <span
+                className={`${!Expanded && "hidden"} origin-left duration-200`}
+              >
+                {menu.title}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-96 text-xl font-semibold mt-4">
+          <h1 className="">Upgrade Premium w-10</h1>
+          <div className="mt-2">Card</div>
+        </div>
+      </div>
+      <div className="p-7 flex-1 h-screen">
+        <h1 className="text-2xl font-semibold ">Home Page </h1>
+      </div>
+    </div>
+  );
+}
+
+export default SideBar;
+
+// 9197b3 */
+
+
+import React, { useState } from "react";
+
+import Dashboard from "../Dashboard";
+import Products from "../Products";
+import Categories from "../Categories";
+import Income from "../Income";
+import Promote from "../Promote";
+import Help from "../Help";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+import setting from "./../../resources/setting.png";
+
+import dashborad from "./../../resources/dashboard.png";
+import product from "./../../resources/product.png";
+import categories from "./../../resources/categories.png";
+import income from "./../../resources/income.png";
+import promote from "./../../resources/promote.png";
+import help from "./../../resources/help.png";
+
+function SideBar() {
+  const [Expanded, setExpanded] = useState(true);
+  const [SelectedMenu, setSelectedMenu] = useState(null);
+
+  const Menus = [
+    { title: "Dashboard", component: <Dashboard />, src: dashborad },
+    { title: "Products", component: <Products />, src: product },
+    { title: "Categories", component: <Categories />, src: categories },
+    { title: "Income", src: income },
+    { title: "Promote", src: promote },
+    { title: "Help", src: help },
+  ];
+
+  const handleMenuClick = (index) => {
+    setSelectedMenu(Menus[index].component);
+  };
+
+  return (
+    <div className="flex bg-[#f9fafe">
+      <div
+        className={` ${
+          Expanded ? "w-72" : "w-20"
+        } duration-300 h-screen p-5 pt-8 bg-[#cccccc] relative`}
+      >
+        <div className="flex gap-x-4 items-center">
+          <img
+            src={setting}
+            className={`cursor-pointer duration-500 w-10 h-10 object-contain `}
+            onClick={() => setExpanded(!Expanded)}
+          />
+          <h1
+            className={`text-white origin-left font-medium text-xl duration-200 ${
+              !Expanded && "scale-0"
+            }`}
+          >
+            Dashboard
+          </h1>
+        </div>
+        <ul className="pt-6">
+          {Menus.map((menu, index) => (
+            <li
+              key={index}
+              className={`flex rounded-sm p-2 text-grey-300 text-sm gap-x-4 items-center hover:bg-[#000] hover:text-white cursor-pointer 
+              ${menu.gap ? "mt-4" : "mt-2"} ${index === 0 && "bg-red"}`}
+              onClick={() => handleMenuClick(index)}
+            >
+              <img src={menu.src} className="w-10 h-10 object-contain" />
+              <span
+                className={`${!Expanded && "hidden"} origin-left duration-200`}
+              >
+                {menu.title}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-96 text-xl font-semibold mt-4">
+          <h1 className="">Upgrade Premium w-10</h1>
+          <div className="mt-2">Card</div>
+        </div>
+      </div>
+      <div className="p-7 flex-1 h-screen">
+        <h1 className="text-2xl font-semibold ">Home Page </h1>
+      </div>
+    </div>
+  );
+}
+
+export default SideBar;
+
+// 9197b3

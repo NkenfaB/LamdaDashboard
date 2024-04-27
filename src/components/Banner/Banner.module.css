@@ -1,0 +1,72 @@
+
+.wrapper {
+    @apply relative
+}
+
+.indicatorConatiner {
+    @apply absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0
+}
+
+.indicators1 {
+    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0  py-0.5 px-4
+    border-solid border-transparent bg-white bg-clip-padding rounded-lg
+}
+
+.indicators2 {
+    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 
+    border-solid border-transparent bg-white bg-clip-padding opacity-50 rounded-lg py-0.5 px-4
+}
+
+.CarouselContainer {
+    @apply relative w-full overflow-hidden after:clear-both after:block after:content-['']
+}
+
+.imageWrapper {
+    @apply relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none
+}
+
+.imageStyle {
+    @apply block w-full
+}
+
+.titleContainer {
+    @apply absolute mt-40 w-96 justify-center left-32 p-10 z-10;
+    transform: scale(1.2);
+}
+
+@media (max-width: 640px) {
+    .titleContainer {
+      transform: scale(1);
+    }
+  }
+
+.bannerTitle {
+    @apply mb-2 text-3xl leading-tight text-white opacity-50
+}
+
+.bannerText1 {
+    @apply mb-4 text-white font-thin text-6xl opacity-75
+}
+
+.bannerText2 {
+    @apply mb-4 text-white opacity-50 text-2xl
+}
+
+.bannerButton {
+    @apply flex justify-start mt-4
+}
+
+.buttonStyle {
+    @apply bg-[#ffffff] hover:bg-blue-700 text-[#3c4242] font-bold py-4 px-16 rounded-lg
+}
+
+.previousButton {
+    @apply absolute bottom-0 left-0 top-0 flex w-[10%] items-center justify-center 
+    
+}
+
+.nextButton {
+    @apply absolute bottom-0 right-0 top-0 flex w-[10%] items-center justify-center 
+     
+}
+
