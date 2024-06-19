@@ -1,0 +1,31 @@
+.searchWrapper {
+    @apply flex items-center justify-center mt-4;
+  }
+  
+  .searchInput {
+    @apply p-2 border border-gray-300 rounded-l-md w-full max-w-md;
+  }
+  
+  .searchButton {
+    @apply p-2 bg-[#001F3F] text-white rounded-r-md hover:bg-[#005f5f];
+  }
+  
+  .someButton {
+    @apply ml-4 p-2 bg-[#001F3F] text-white rounded hover:bg-[#001630];
+  }
+  
+  .filterWrapper {
+    @apply flex flex-wrap justify-start gap-2 mt-4 mb-4 max-w-xl m-auto;
+  }
+  
+  .filterItem {
+    @apply flex flex-col items-start;
+  }
+  
+  .filterSelect {
+    @apply p-2 border border-gray-300 rounded-lg mt-1 bg-[#d9d9d9];
+  }
+
+  .bottomBorder {
+    @apply border-b border-[#001F3F]
+  }

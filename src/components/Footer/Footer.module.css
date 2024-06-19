@@ -1,0 +1,89 @@
+
+  .wrapper {
+    @apply bg-[#ECF0F1] text-center text-neutral-600 w-full  bottom-0 left-0;
+  }
+
+  .wrapperBorder {
+    @apply flex items-center justify-center border-b border-t border-[#001F3F] p-2  bg-[#ffffff] lg:justify-between; 
+  }
+
+  .borderTitle {
+    @apply mr-12 hidden md:block;
+  }
+
+  .wrapperIcons {
+    @apply flex justify-center items-center;
+  }
+
+  .iconsLinks {
+    @apply mr-6 text-neutral-600
+  }
+
+  .iconsFont {
+    @apply text-[#001F3F] w-4 h-4;
+  }
+  
+  .subFooterWrapper {
+    @apply mx-6 pt-8 pb-4 text-center justify-center;
+  }
+  .subFooter {
+    @apply mb-6;
+  }
+  .subFooterTitle {
+    @apply mb-2 font-bold uppercase;
+  }
+  .subFooterText {
+    @apply mb-4;
+  }
+
+  .listWrapper {
+    @apply grid grid-cols-1 md:grid-cols-3 mb-4 text-center;
+  }
+  .subListWrapper {
+    @apply mb-6;
+  }
+  .listTitle {
+    @apply mb-2.5 font-bold text-neutral-600 hover:text-[#001F3F];
+  }
+  .listElements {
+    @apply mb-0 list-none;
+  }
+  .listItems {
+    @apply text-neutral-600 hover:text-[#001F3F];
+  }
+  .newsLetterWrap {
+    @apply relative mb-7;
+  }
+  .newsLetter {
+    @apply grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 mb-6;
+  }
+  .newsLetterFont {
+    @apply md:ml-auto;
+  }
+  .newsLetterStyle {
+    @apply font-bold;
+  }
+  .labelFont {
+    @apply sr-only;
+  }
+  .inputFont {
+    @apply w-full block rounded-lg border dark:border-none dark:bg-neutral-700 py-[9px] px-3 pr-4 text-sm focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none;
+  }
+  .buttonWrap {
+    @apply md:mr-auto;
+  }
+  .buttonFont {
+    @apply inline-block rounded bg-indigo-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-indigo-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-indigo-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-indigo-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0;
+  }
+  .copyRightWrap {
+    @apply bg-[#001F3F] p-6 text-center text-[#ffffff] flex justify-center items-center;
+  }
+  .LogoWrap {
+    @apply mx-3;
+  }
+  .image {
+    @apply h-5;
+  }
+  .copyRightFont {
+    @apply font-semibold text-[#ffffff] dark:text-neutral-400;
+  }

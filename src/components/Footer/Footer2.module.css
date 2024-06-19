@@ -1,0 +1,20 @@
+
+  .wrapper {
+    @apply bg-[#ECF0F1] text-center text-neutral-600 w-full fixed bottom-0 left-0;
+  }
+
+  .copyRightWrap {
+    @apply bg-[#001F3F] p-6 text-center text-[#ffffff] flex justify-center items-center;
+  }
+  .LogoWrap {
+    @apply mx-3;
+  }
+  .image {
+    @apply h-5;
+  }
+  .copyRightFont {
+    @apply font-semibold text-[#ffffff] dark:text-neutral-400;
+  }
+
+
+       

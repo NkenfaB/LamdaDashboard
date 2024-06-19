@@ -1,0 +1,22 @@
+  
+  /* .cardWrapper {
+    @apply max-w-6xl
+  } */
+
+  .card {
+    @apply bg-white  shadow-md overflow-hidden ;
+  }
+  
+  .imageWrapper {
+    @apply relative;
+  }
+  
+  .image {
+    @apply h-96 object-cover;
+  }
+  
+  .title {
+    @apply absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-lg font-bold p-2 text-center;
+  }
+  
+ 

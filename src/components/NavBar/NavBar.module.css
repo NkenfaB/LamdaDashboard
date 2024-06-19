@@ -1,0 +1,85 @@
+ 
+ .navWrapper {
+    @apply relative flex w-full items-center justify-between bg-zinc-50  bg-[#001F3F];
+    @apply lg:flex-wrap lg:justify-start ;
+ }
+
+ .navPosition {
+    @apply flex w-full flex-wrap items-center justify-between px-3;
+ }
+
+ .toggleButton {
+   @apply block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none;
+   @apply focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden;
+ }
+ 
+
+ .headlinesWrapper{
+    @apply !visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto
+ }
+
+ .menuOpen {
+   @apply !block;
+ }
+ 
+ /* .menuOpen {
+   @apply flex flex-col; /* Ensure vertical layout for small screens 
+ } */
+
+ .logoWrapper {
+    @apply mb-4 me-5 ms-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 
+    dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0
+ }
+
+ .logoStyle {
+    @apply h-10
+ }
+
+ .navMenu1 {
+    @apply me-auto flex flex-col ps-0 lg:flex-row mb-2
+ }
+
+ .navSubMenu1 {
+   @apply mb-4 lg:mb-0 lg:pe-2 px-3; 
+   @apply mt-2;  
+ }
+
+ .navLink1 {
+    @apply text-[#ffffff] hover:bg-[#007B7F] p-6 lg:px-2
+ }
+
+ .navMenu2 {
+    @apply me-auto flex flex-col ps-0 lg:flex-row
+ }
+
+ .navSubMenuWrapper {
+    @apply relative flex items-center lg:py-4;
+    @apply sm:flex items-center p-2 mt-2 sm:py-4 sm:m-auto sm:my-auto
+ }
+
+ .navSubMenu2 {
+    @apply me-4 text-neutral-600 dark:text-white
+ }
+
+ .navSubMenuIcon {
+    @apply text-[#ffffff] w-6 h-8 px-2 hover:text-blue-500
+ }
+
+ .navSubTitle {
+   @apply px-3  sm:py-2 lg:mb-0 lg:pe-2;  
+ }
+
+ .usernameWrap{
+   @apply text-[#ffffff] text-lg;
+ }
+
+ /* .navSubTitle {
+   @apply mb-4 lg:mb-0 lg:pe-2 px-3; 
+   @apply mb-2 ;
+   @apply sm:py-2;  
+ } */
+
+
+ .navSubTitleFont {
+    @apply text-[#ffffff] hover:bg-[#007B7F] p-6 lg:px-2 
+ }

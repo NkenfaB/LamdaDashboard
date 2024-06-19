@@ -1,0 +1,31 @@
+.eventCard {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+  
+  .eventCard h3 {
+    margin: 0 0 8px;
+  }
+  
+  .eventCard p {
+    margin: 4px 0;
+  }
+  
+  .eventCard button {
+    margin-right: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .eventCard button:hover {
+    background-color: #0056b3;
+  }
+  
